@@ -17,7 +17,7 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="169dp"
+            android:layout_width="150dp"
             android:layout_height="131dp"
             android:background="@drawable/logotype_png"
             android:contentDescription="TODO"
