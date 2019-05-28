@@ -63,7 +63,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        TextView login = findViewById(R.id.textlogin);
+
         cards3.add(0,4);
         cards3.add(1,3);
         cards3.add(2,2);
