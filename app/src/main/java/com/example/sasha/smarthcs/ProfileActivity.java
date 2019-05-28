@@ -59,6 +59,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
@@ -294,7 +295,6 @@ call.enqueue(new Callback<has_total>() {
                         true
                 )
         );
-        int sum = 0;
         Checkout.tokenize(
                 this,
                 new Amount(new BigDecimal(String.valueOf(Integer.valueOf(MainActivity.GSV.get(0))+
@@ -303,7 +303,7 @@ call.enqueue(new Callback<has_total>() {
                 new ShopParameters(
                         "Умный ЖКХ",
                         "Оплата ЖКХ",
-                        "47",
+                        "12",
                         Collections.singleton(PaymentMethodType.BANK_CARD)
                 )
         );
@@ -327,6 +327,9 @@ call.enqueue(new Callback<has_total>() {
     private void startTotalInfo() {
         Intent intent = new Intent(this, TotalInfo.class);
         startActivity(intent);
+    }
+    public void onBackPressed() {
+        // do nothing.
     }
 
     public void exit(View view)

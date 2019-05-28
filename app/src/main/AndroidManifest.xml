@@ -40,9 +40,9 @@
         <activity
             android:name=".InfoS.TotalInfo"
             android:screenOrientation="portrait" android:theme="@style/AppTheme.SlidrActivityTheme" />
-        <activity android:name=".Daily_INFo.Daily_gas_activity" />
-        <activity android:name=".Daily_INFo.Daily_light_activity" />
-        <activity android:name=".Daily_INFo.Daily_water_activity" />
+        <activity android:name=".Daily_INFo.Daily_gas_activity" android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".Daily_INFo.Daily_light_activity" android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".Daily_INFo.Daily_water_activity" android:theme="@style/AppTheme.SlidrActivityTheme" />
     </application>
 
 </manifest>

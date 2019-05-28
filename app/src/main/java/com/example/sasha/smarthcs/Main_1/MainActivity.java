@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         Button loginButton = findViewById(R.id.login_button);
         final EditText loginText = findViewById(R.id.login_text);
         final EditText passwordText = findViewById(R.id.password_text);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,11 +74,15 @@ public class MainActivity extends AppCompatActivity {
 
                         if (response.body().reply.equals("1")) {
 
-                            Toast.makeText(getApplicationContext(), "Успешно", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Добро пожаловать",Toast.LENGTH_LONG).show();
                             LOGIN = cur_name;
+                            loginText.setText("");
+                            passwordText.setText("");
                             openProfile();
                         } else {
                             Toast.makeText(getApplicationContext(), "Ошибка, повторите ввод", Toast.LENGTH_LONG).show();
+                            loginText.setText("");
+                            passwordText.setText("");
                         }
                     }
 
